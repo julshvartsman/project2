@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #fedfef;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-title-section {
+  margin: 0 20px 2rem 20px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.project-title-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.project-title-input:focus {
+  outline: none;
+  border-color: currentColor;
+}
+
+.timeline-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.timeline-progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: all 0.3s ease;
+}
+
+.progress-text {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.add-step-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.step-input:focus {
+  outline: none;
+  border-color: currentColor;
+}
+
+.add-step-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-step-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.steps-list {
+  text-align: left;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+  gap: 12px;
+}
+
+.step-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.step-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.step-item span {
+  flex: 1;
+}
+
+.delete-button {
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  line-height: 1;
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.theme-selector {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.theme-selector label {
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.theme-selector select {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.theme-selector select:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.header-section {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.back-button:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.templates-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.templates-section h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.templates-section h4 {
+  color: #444;
+  margin: 1rem 0;
+}
+
+.template-groups {
+  margin-bottom: 2rem;
+}
+
+.template-group-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.template-group-button {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.template-group-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.api-templates {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.templates-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.template-button {
+  transition: all 0.2s ease;
+}
+
+.template-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  padding: 1rem;
+  font-style: italic;
+}
